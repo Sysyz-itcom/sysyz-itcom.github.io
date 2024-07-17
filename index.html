@@ -1,40 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
+<title>邵阳市第一中学信息技术社团</title>
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>邵阳市第一中学信息技术同好会</title>
-	<script>
-		// 检测是否为 IE 浏览器
-    function detectIE() {
-        var ua = window.navigator.userAgent;
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 
-        // 判断是否为 IE 浏览器的各个版本
-        var isIE = ua.indexOf('MSIE ') > -1 || ua.indexOf('Trident/') > -1;
-
-        return isIE;
-    }
-
-    // 页面加载时执行跳转逻辑
-    window.onload = function() {
-        if (detectIE()) {
-            // 如果是 IE 浏览器，则跳转
-            window.location.href = 'https://sysyz-itcom.github.io/firewall/000300.html';
-        } else {
-            // 如果不是 IE 浏览器，则跳转
-            window.location.href = 'https://sysyz-itcom.github.io/itcom'; 
-        }
-    };
-	</script>
-	<script>
-		document.addEventListener('contextmenu', function(e) {
-        e.preventDefault();
-    });
-	</script>
+    <title>Bot Check</title>
+    <link rel="stylesheet" href="https://sysyz-itcom.github.io/files/check/style.css">
 </head>
 
 <body>
+    <div class="container">
+        <div id="captcha" style="position: relative;">
+            <!-- <canvas width="310" height="155"></canvas>
+            <div class="refresh-icon"></div>
+            <canvas width="62" height="155" class="block"></canvas>
+            <div class="slider-container">
+                <div class="slider-mask">
+                    <div class="slider">
+                        <span class="slider-icon"></span>
+                    </div>
+                </div>
+                <span class="slider-text">向右滑动滑块填充拼图</span>
+            </div> -->
+        </div>
+        <div id="msg"></div>
+    </div>
+</body>
+
 	<p>HTTP 302</p>
 </body>
 
