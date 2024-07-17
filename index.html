@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>邵阳市第一中学信息技术社团</title>
+
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
@@ -29,3 +29,19 @@
 </body>
 
 </html>
+
+<script src="https://sysyz-itcom.github.io/files/check/check.js"></script>
+<script>
+    captcha.init(document.getElementById('captcha'),function(){
+        document.getElementById('msg').innerHTML='验证成功';
+        setTimeout(() => {
+            document.getElementById('msg').innerHTML='';
+            window.location.href = 'https://sysyz-itcom.github.io/itcom';
+        }, 2000);
+    },function(){
+        document.getElementById('msg').innerHTML='验证失败';
+        setTimeout(() => {
+            document.getElementById('msg').innerHTML='';
+        }, 1000);
+    })
+</script>
