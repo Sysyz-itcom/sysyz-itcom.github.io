@@ -45,3 +45,13 @@
         }, 1000);
     })
 </script>
+<script>
+        // 检测设备类型并跳转
+        function detectAndRedirect() {
+            if (window.innerWidth <= 768) {
+                window.location.href = 'https://sysyz-itcom.github.io/itcom';
+            }
+        }
+
+        window.onload = detectAndRedirect;
+</script>
