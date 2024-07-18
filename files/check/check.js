@@ -237,7 +237,7 @@
         // 验证
         verify(){
             const left=parseInt(this.block.style.left);
-            return Math.abs(left-this.x)<5; //容错率，值越小，需要拼得越精确
+            return Math.abs(left-this.x)<1; //容错率，值越小，需要拼得越精确
         }
     }
 
