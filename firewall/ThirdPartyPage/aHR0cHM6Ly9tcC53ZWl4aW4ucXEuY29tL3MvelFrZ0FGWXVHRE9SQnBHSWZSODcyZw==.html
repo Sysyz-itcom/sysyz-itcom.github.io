@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>社团安全中心提示</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            /* 容器宽度为屏幕宽度的*% */
+            max-width: 400px;
+            /* 最大宽度限制 */
+            margin: 0 auto;
+            /* 居中显示 */
+            overflow-wrap: break-word;
+            /* 溢出内容内换行 */
+            overflow: hidden;
+            /* 隐藏溢出内容 */
+        }
+
+
+
+        .confirm-text {
+            margin-bottom: 20px;
+        }
+
+        .confirm-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-align: right;
+            /* 将按钮内文本内容右对齐 */
+        }
+
+        .confirm-button:hover {
+            background-color: #0056b3;
+        }
+
+        @media screen and (max-width: 386px) {
+            .container {
+                word-wrap: break-word;
+                /* 允许文本换行 */
+                overflow: hidden;
+                /* 不允许内容溢出容器显示，并且不隐藏溢出的部分 */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="confirm-text">
+            <h2>即将跳转到第三方页面</h2>
+            <P>您即将跳转到以下页面，请注意保护个人隐私信息</P>
+            <h5>https://mp.weixin.qq.com/s/zQkgAFYuGDORBpGIfR872g</h5>
+        </div>
+        <button class="confirm-button"
+            onclick="window.location.href = 'https://mp.weixin.qq.com/s/zQkgAFYuGDORBpGIfR872g';">跳转</button>
+    </div>
+
+</body>
+
+</html>
