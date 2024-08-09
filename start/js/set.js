@@ -5,15 +5,15 @@ github：https://github.com/5iux/sou
 日期：2019-07-26
 版权所有，请勿删除
 ========================================
-由 yeetime 修改
+yeetime
 github：https://github.com/yeetime/sou2
 日期：2019-12-13
 ========================================
-由 imsyy 二次修改
+imsyy
 github：https://github.com/imsyy/sou2
 日期：2022-03-10
 ========================================
-由 yizhixianyuuuu 二次修改
+yizhixianyuuuu
 github：https://github.com/sysyz-itcom
 日期：2024-07-19
 */
@@ -238,10 +238,10 @@ function setBgImgInit() {
             $('#bg').attr('src', pictures[rd]) //随机默认壁纸
             break;
         case "2":
-            $('#bg').attr('src', 'https://api.dujin.org/bing/1920.php') //必应每日
+            $('#bg').attr('src', 'https://bing.shangzhenyang.com/api/1080p') //必应每日
             break;
         case "3":
-            $('#bg').attr('src', 'https://api.ixiaowai.cn/gqapi/gqapi.php') //随机风景
+            $('#bg').attr('src', 'https://tu.ltyuanfang.cn/api/fengjing.php') //随机风景
             break;
         case "4":
             $('#bg').attr('src', 'https://www.dmoe.cc/random.php') //随机二次元
