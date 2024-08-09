@@ -1091,7 +1091,7 @@ $(document).ready(function () {
         }
 
         if (type === "3") {
-            $('#wallpaper_text').html("显示随机风景图，API已失效，请勿设置");
+            $('#wallpaper_text').html("显示随机风景图，刷新页面以生效");
             setBgImg(bg_img);
             iziToast.show({
                 message: '壁纸设置成功，刷新生效',
@@ -1099,7 +1099,7 @@ $(document).ready(function () {
         }
 
         if (type === "4") {
-            $('#wallpaper_text').html("显示随机二次元图，每次刷新后更换，刷新页面以生效");
+            $('#wallpaper_text').html("显示随机二次元图，刷新页面以生效");
             setBgImg(bg_img);
             iziToast.show({
                 message: '壁纸设置成功，刷新生效',
