@@ -1,0 +1,1 @@
+import{_ as s,c as i,o as a,a2 as t}from"./chunks/framework.CEgrwLex.js";const o=JSON.parse('{"title":"时间问候组件","description":"","frontmatter":{},"headers":[],"relativePath":"h5-js/time.md","filePath":"h5-js/time.md"}'),h={name:"h5-js/time.md"},n=t("",10),k=[n];function l(p,e,E,r,g,d){return a(),i("div",null,k)}const F=s(h,[["render",l]]);export{o as __pageData,F as default};
