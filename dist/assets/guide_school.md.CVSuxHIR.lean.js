@@ -1,1 +1,0 @@
-import{_ as o,c as a,o as e,a2 as n}from"./chunks/framework.CEgrwLex.js";const m=JSON.parse('{"title":"我们的学校","description":"","frontmatter":{},"headers":[],"relativePath":"guide/school.md","filePath":"guide/school.md"}'),i={name:"guide/school.md"},t=n("",8),l=[t];function r(s,h,d,c,u,g){return e(),a("div",null,l)}const p=o(i,[["render",r]]);export{m as __pageData,p as default};
