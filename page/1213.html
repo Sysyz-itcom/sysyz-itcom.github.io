@@ -12,6 +12,7 @@
 			margin: 0;
 			padding: 0;
 			color: #ecf0f1;
+			user-select: none;
 		}
 
 		main {
@@ -50,6 +51,17 @@
 			font-size: 1.2em;
 		}
 	</style>
+	<script type="text/javascript">
+		// 禁用右键菜单
+		document.addEventListener("contextmenu", function(e) {
+			e.preventDefault();
+		});
+
+		// 禁用文本选择
+		document.addEventListener("selectstart", function(e) {
+			e.preventDefault();
+		});
+	</script>
 </head>
 <body>
 	<main>
